@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Se cuadre el borde de la figura al ancho de la pantalla, sin importar el padding y margin*/
+}
+
+/*Ajustar a toda la pantalla*/
+#contenido{
+width: 100vw;
+height: 100vh;
+background-color: darkred;
+display: flex;
+/*justify-content: center;
+align-items: flex-end;*/
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.cubo{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    line-height: 60px; /*Mueve el objeto dentro del contenido*/
+    font-size: 60px;
+    text-align: center;
+    
+}
+/*.cubo:nth-child(2){
+    justify-content: center;
+}
+.cubo:nth-child(3){
+    justify-self: flex-end;
+    align-self: flex-end;
+}*/
+.cubo:nth-child(4){
+    flex-direction: column;
+    justify-content: end;
+}
+.cubo:nth-child(5){
+    align-self: flex-end;
+}
