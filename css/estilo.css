@@ -4,17 +4,15 @@
     box-sizing: border-box; /*Se cuadre el borde de la figura al ancho de la pantalla, sin importar el padding y margin*/
 }
 
-/*Ajustar a toda la pantalla*/
-#contenido{
+
+#contenido:first-child{
 width: 100vw;
-height: 100vh;
+height: 33.33vh;
 background-color: darkred;
 display: flex;
-/*justify-content: center;
-align-items: flex-end;*/
-justify-content: space-around;
-flex-wrap: wrap;
+justify-content: space-between;
 }
+
 .cubo{
     width: 100px;
     height: 100px;
@@ -24,19 +22,22 @@ flex-wrap: wrap;
     line-height: 60px; /*Mueve el objeto dentro del contenido*/
     font-size: 60px;
     text-align: center;
-    
 }
-/*.cubo:nth-child(2){
-    justify-content: center;
-}
-.cubo:nth-child(3){
-    justify-self: flex-end;
-    align-self: flex-end;
-}*/
-.cubo:nth-child(4){
-    flex-direction: column;
-    justify-content: end;
-}
-.cubo:nth-child(5){
-    align-self: flex-end;
+
+#contenido:nth-child(2){
+    width: 100vw;
+    height: 33.33vh;
+    background-color: darkred;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+#contenido:last-child{
+width: 100vw;
+height: 33.33vh;
+background-color: darkred;
+display: flex;
+justify-content: flex-end;
+align-items: end;
 }
